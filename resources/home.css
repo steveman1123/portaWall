@@ -1,0 +1,117 @@
+body {
+  text-align: center;
+  font-size: 0;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /*overflow-x: auto;*/
+  /*white-space: nowrap;*/
+}
+p {
+  font-size: 14pt;
+}
+
+.button {
+  font-size: 14pt;
+  line-height: 16pt;
+  background-color: green;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+#color, #colorText {
+  width: 4em;
+  font-size: 14pt;
+}
+
+#board {
+  display: inline-block;
+  border: solid black 1px;
+  padding: 5px;
+  background-image: url('./wood.jpg');
+  margin: 0 auto;
+  touch-action: none;
+}
+
+.light {
+  border-radius: 50%;
+  border: solid black 1px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#fileList {
+  width: 50%;
+  padding: 5px;
+  border: solid grey 1px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 14pt;
+}
+
+#fileList p {
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 0;
+}
+
+.fileName, .trash {
+  background: none;
+  border: none;
+  font-size: 14pt;
+  margin: 0;
+  cursor: pointer;
+}
+
+.fileName:hover {
+  font-weight: bold;
+}
+
+.trashPic {
+  background-image: url("./trash.png");
+  background-size: cover;
+  width: 20px;
+  height: 1.15em;
+}
+
+.trashPic:hover {
+  background-image: url("./trashOpen.png");
+}
+
+.fileName, .trash {
+  border: none;
+  background-color: transparent;
+}
+
+#credits {
+  font-size: 9pt;
+  color: grey;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 640px) {
+  .light {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    margin: 3px;
+  }
+
+  #fileList {
+    width: 90%;
+  }
+}
